@@ -6,6 +6,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
+    "async": "^1.5.2",
+    "exceljs": "^0.2.7",
+    "node-geocoder": "^3.10.0",
     "react": "^0.14.8",
     "react-native": "^0.25.1"
   }
