@@ -4,7 +4,10 @@ import {
   StyleSheet
 } from 'react-native';
 
+var ArtWalkMap = require('./components/artwalkMap');
+
 var ROUTES = {
+  artwalkMap: ArtWalkMap
 };
 
 
@@ -17,7 +20,7 @@ module.exports = React.createClass({
     return (
         <Navigator
           style={styles.container}
-          initialRoute={}
+          initialRoute={{name: 'artwalkMap'}}
           renderScene={this.renderScene}
           configureScene={() => { return Navigator.SceneConfigs.FloatFromRight; }}
          />

@@ -3,4 +3,4 @@ import { AppRegistry } from 'react-native';
 
 var Main = require('./src/main');
 
-AppRegistry.registerComponent('authentication', () => Main);
+AppRegistry.registerComponent('sonya_artwalk', () => Main);
