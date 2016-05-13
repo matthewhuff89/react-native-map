@@ -1,8 +1,8 @@
-var React = require('react-native');
-var {
-  StyleSheet,
-  Navigator
-} = React;
+import React from 'react';
+import {
+  Navigator,
+  StyleSheet
+} from 'react-native';
 
 var ROUTES = {
 };
