@@ -12,7 +12,11 @@ console.log(artists);
 module.exports = React.createClass({
   getInitialState: function() {
     return {
-      pins: artists
+      pins: artists,
+      location: {
+        latitude: 40.6968804,
+        longitude: -73.9688704
+      }
     };
   },
   render: function(){
@@ -21,6 +25,9 @@ module.exports = React.createClass({
         <MapView
           annotations={this.state.pins}
           style={styles.map}
+          region={this.state.location}
+          showsUserLocation={true}
+          maxDelta={0.05}
           >
         </MapView>
       </View>
