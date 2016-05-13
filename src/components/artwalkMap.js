@@ -6,11 +6,20 @@ import {
   MapView
 } from 'react-native';
 
+var artists = require('../../artists.json');
+console.log(artists);
+
 module.exports = React.createClass({
+  getInitialState: function() {
+    return {
+      pins: artists
+    };
+  },
   render: function(){
     return (
       <View style={styles.container}>
         <MapView
+          annotations={this.state.pins}
           style={styles.map}
           >
         </MapView>
