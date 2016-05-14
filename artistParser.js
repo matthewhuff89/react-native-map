@@ -2,6 +2,7 @@ var Excel = require('exceljs');
 var async = require('async');
 var geocoderProvider = 'google';
 var httpAdapter = 'https';
+var extra = {apiKey: 'AIzaSyBZg1inywew_G-7WdB5rYZPRlZ1pd3Ze1c'}
 var geocoder = require('node-geocoder')(geocoderProvider, httpAdapter, extra);
 var fs = require('fs');
 
@@ -53,7 +54,7 @@ function mapGeocodes(artistsArray, _waterfallCallback){
 
 async.waterfall([parseExcelFile, mapGeocodes], function(err, results){
   if(err){
-    console.log("OH FUCK THERE WAS A FUCKING ERROR");
+    console.log(err);
   }
   fs.writeFile('./artists.json', JSON.stringify(results, null, 2) , 'utf-8');
 })

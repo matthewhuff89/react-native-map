@@ -5,9 +5,11 @@ import {
 } from 'react-native';
 
 var ArtWalkMap = require('./components/artwalkMap');
+var Sponsors = require('./components/sponsors');
 
 var ROUTES = {
-  artwalkMap: ArtWalkMap
+  artwalkMap: ArtWalkMap,
+  sponsors: Sponsors
 };
 
 
