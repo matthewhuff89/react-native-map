@@ -29,14 +29,18 @@ module.exports = React.createClass({
             style={styles.menu}
             onPress={this.onMapPress}
             >
-            <Text>"MAP"</Text>
+            <Text>MAP</Text>
           </TouchableHighlight>
         <TouchableHighlight
-          style={styles.link1}
           onPress={this.linkToMARP}
           >
           <Image
+            style={{
+              width: 400,
+              height: 250
+            }}
             source={require('../images/MARP_ad.png')}
+            resizeMode='stretch'
             />
         </TouchableHighlight>
         <TouchableHighlight
@@ -45,7 +49,7 @@ module.exports = React.createClass({
           >
           <Image
             source={require('../images/fab_logo.png')}
-            resizeMode={'contain'}
+            resizeMode='stretch'
             />
         </TouchableHighlight>
         <TouchableHighlight
@@ -54,7 +58,16 @@ module.exports = React.createClass({
           >
           <Image
             source={require('../images/bldg92_logo.png')}
-            resizeMode={'contain'}
+            resizeMode='stretch'
+            />
+        </TouchableHighlight>
+        <TouchableHighlight
+          style={styles.link4}
+          onPress={this.linkToBldg92}
+          >
+          <Image
+            source={require('../images/bldg92_logo.png')}
+            resizeMode='stretch'
             />
         </TouchableHighlight>
       </View>
@@ -171,9 +184,8 @@ var styles = StyleSheet.create({
     justifyContent: 'center'
   },
   menu: {
-    flex: 4,
-    justifyContent: 'center',
-    backgroundColor: 'blue'
+    flex: 1,
+    justifyContent: 'center'
   },
   link1: {
     flex: 1,

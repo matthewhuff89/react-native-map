@@ -53,7 +53,7 @@ var styles = StyleSheet.create({
     backgroundColor: '#F5FCFF'
   },
   navigation: {
-    flex: 2,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
