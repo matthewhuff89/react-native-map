@@ -30,132 +30,132 @@ module.exports = React.createClass({
   },
   render: function(){
     return (
-      <TouchableWithoutFeedback onPress={this._handlePress}>
       <View style={styles.container}>
         <View style={styles.navigation}>
-          <Text style={styles.text}>Thanks to our sponsors!!</Text>
           <TouchableHighlight
             onPress={this.onMapPress}
             >
             <Text
               style={styles.mapButton}
             >
-              MAP
+              Map
             </Text>
           </TouchableHighlight>
+          <Text style={styles.text}>Thanks to our sponsors!!</Text>
         </View>
-        <View style={styles.link1}>
-          <TouchableHighlight
-            onPress={this.linkToMARP}
-            >
-            <Image
-              style={{
-                width: 400,
-                height: 250
-              }}
-              source={require('../images/MARP_ad.png')}
-              resizeMode='stretch'
-              />
-          </TouchableHighlight>
-        </View>
-        <View style={styles.link2}>
-          <TouchableHighlight
-            onPress={this.linkToFAB}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/FAB.png')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToBldg92}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/bldg92.png')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToHadas}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/Hadas.png')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-        </View>
-        <View style={styles.link3}>
-          <TouchableHighlight
-            onPress={this.linkToClaver}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/claver.jpg')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToOptics}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/optics_logo.png')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToGreen}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/green_inBklyn.png')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-        </View>
-        <View style={styles.link4}>
-          <TouchableHighlight
-            onPress={this.linkToPussycat}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/Logo.jpg')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToCoffee}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/coffee_11238.jpeg')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToTipsy}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/tipsy.jpg')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
-          <TouchableHighlight
-            onPress={this.linkToCorkscrew}
-            >
-            <Image
-              style={styles.image}
-              source={require('../images/Corkscrew_wines.png')}
-              resizeMode='contain'
-              />
-          </TouchableHighlight>
+        <View style={styles.sponsorContainer}>
+          <View style={styles.link1}>
+            <TouchableHighlight
+              onPress={this.linkToMARP}
+              >
+              <Image
+                style={{
+                  width: 400,
+                  height: 250
+                }}
+                source={require('../images/MARP_ad.png')}
+                resizeMode='stretch'
+                />
+            </TouchableHighlight>
+          </View>
+          <View style={styles.link2}>
+            <TouchableHighlight
+              onPress={this.linkToFAB}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/FAB.png')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToBldg92}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/bldg92.png')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToHadas}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/Hadas.png')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+          </View>
+          <View style={styles.link3}>
+            <TouchableHighlight
+              onPress={this.linkToClaver}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/claver.jpg')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToOptics}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/optics_logo.png')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToGreen}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/green_inBklyn.png')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+          </View>
+          <View style={styles.link4}>
+            <TouchableHighlight
+              onPress={this.linkToPussycat}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/Logo.jpg')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToCoffee}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/coffee_11238.jpeg')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToTipsy}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/tipsy.jpg')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+            <TouchableHighlight
+              onPress={this.linkToCorkscrew}
+              >
+              <Image
+                style={styles.image}
+                source={require('../images/Corkscrew_wines.png')}
+                resizeMode='contain'
+                />
+            </TouchableHighlight>
+          </View>
         </View>
       </View>
-    </TouchableWithoutFeedback>
 
     )
   },
@@ -268,27 +268,35 @@ module.exports = React.createClass({
 
 var styles = StyleSheet.create({
   container: {
-    flex: 2,
+    flex: 1,
     justifyContent: 'center'
   },
   navigation: {
     flex: 1,
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    justifyContent: 'center'
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+    borderStyle: 'solid'
   },
   text: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: 'black'
+    color: 'black',
+    marginLeft: 25
   },
   mapButton: {
     color: 'blue',
-    fontSize: 16
+    fontSize: 18,
+    textAlign: 'left'
   },
   image: {
     height: 100,
     width: 100
+  },
+  sponsorContainer: {
+    flex: 6
   },
   link1: {
     flex: 2,

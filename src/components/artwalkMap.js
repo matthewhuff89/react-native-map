@@ -120,7 +120,7 @@ var styles = StyleSheet.create({
     marginTop: 10
   },
   map: {
-    flex: 6
+    flex: 7
   },
   textWrapper: {
 
@@ -130,8 +130,8 @@ var styles = StyleSheet.create({
     fontSize: 18
   },
   image: {
-    marginLeft: 15,
-    marginRight: 15,
+    marginLeft: 20,
+    marginRight: 20,
     height: 75,
     width: 150
   }
