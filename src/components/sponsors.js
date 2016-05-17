@@ -268,7 +268,7 @@ module.exports = React.createClass({
 
 var styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center'
   },
   navigation: {
@@ -293,6 +293,7 @@ var styles = StyleSheet.create({
   link1: {
     flex: 2,
     justifyContent: 'center',
+    marginBottom: 20
   },
   link2: {
     flex: 1,
@@ -308,37 +309,5 @@ var styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center'
-  },
-  link5: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link6: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link7: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link8: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link9: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link10: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link11: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  link12: {
-    flex: 1,
-    justifyContent: 'center'
-  },
+  }
 })
