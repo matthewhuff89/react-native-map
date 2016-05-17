@@ -39,10 +39,12 @@
     "latitude": 40.6819195
   },
   {
-    "firstName": "window painting ",
+    "firstName": "The Owl",
+    "lastName": "And Pussycat Salon",
     "address": "154 Vanderbilt Ave, Brooklyn, NY 11205",
     "longitude": -73.9699641,
     "latitude": 40.6928475,
+    "artFormat": "Window Painting",
     "crossStreet": "Myrtle Ave"
   },
   {
@@ -127,7 +129,7 @@
   {
     "firstName": "Matthew",
     "lastName": "Kirby",
-    "address": "372 Clinton Avenue, Brooklyn NY (Brooklyn Free School)\n",
+    "address": "372 Clinton Avenue (Brooklyn Free School)",
     "longitude": -73.96802579999999,
     "latitude": 40.6870934,
     "artFormat": "Painting,Drawing",
@@ -350,7 +352,7 @@
   {
     "firstName": "Nina",
     "lastName": "Allen",
-    "address": "Coffee 11238\n995A Fulton St, Brooklyn NY",
+    "address": "Coffee 11238, 995A Fulton St, Brooklyn NY",
     "longitude": -73.9630466,
     "latitude": 40.6828294,
     "artFormat": "Painting",
