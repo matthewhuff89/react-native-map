@@ -60,6 +60,7 @@ module.exports = React.createClass({
         </View>
 
         <MapView
+          onRegionChangeComplete={this.onRegionChangeComplete}
           annotations={this.state.pins}
           style={styles.map}
           region={this.state.position.coords}
@@ -77,11 +78,20 @@ module.exports = React.createClass({
     Geolocation.getCurrentPosition(
       (position) => {
         this.setState({position})
-        navigator.geolocation.clearWatch(this.watchID);
       },
       (error) => alert(error.message),
       {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
     )
+  },
+  onRegionChangeComplete: function(region) {
+    this.setState({
+      position: {
+        coords: {
+          longitude: region.longitude,
+          latitude: region.latitude
+        }
+      }
+    });
   }
 });
 
