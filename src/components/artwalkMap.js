@@ -26,8 +26,7 @@ module.exports = React.createClass({
           latitude: 40.6968804,
           longitude: -73.9688704
         }
-      },
-      lastPosition: 'unknown'
+      }
     };
   },
   render: function(){
@@ -66,6 +65,17 @@ module.exports = React.createClass({
           region={this.state.position.coords}
           showsUserLocation={true}
           maxDelta={0.05}
+          overlays={[{
+            coordinates: [
+            {latitude: 40.70, longitude: -78},
+            {latitude: 40.60, longitude: -78},
+            {latitude: 40.60, longitude: -79},
+            {latitude: 40.70, longitude: -79}
+            ],
+            strokeColor: '#f007',
+            fillColor: 'blue',
+            lineWidth: 15
+          }]}
           >
         </MapView>
       </View>
