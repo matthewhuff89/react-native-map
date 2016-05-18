@@ -21,9 +21,21 @@
       "scale" : "3x"
     },
     {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "DefaultIcon-ios copy.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "DefaultIcon-ios 2.png",
+      "scale" : "3x"
+    },
+    {
       "idiom" : "iphone",
       "size" : "60x60",
-      "scale" : "2x"
+      "scale" : "3x"
     },
     {
       "idiom" : "iphone",

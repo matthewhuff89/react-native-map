@@ -3,4 +3,4 @@ import { AppRegistry } from 'react-native';
 
 var Main = require('./src/main');
 
-AppRegistry.registerComponent('sonya_artwalk', () => Main);
+AppRegistry.registerComponent('Sonya ArtWalk 2016', () => Main);

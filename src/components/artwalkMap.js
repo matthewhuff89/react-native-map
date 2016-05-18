@@ -132,7 +132,7 @@ var styles = StyleSheet.create({
   image: {
     marginLeft: 20,
     marginRight: 20,
-    height: 75,
-    width: 150
+    height: 60,
+    width: 120
   }
 });
